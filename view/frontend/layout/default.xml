@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<head>
+		<script src="AbleCanyon_GeoModal::js/popup.js"/>
+		<script src="AbleCanyon_GeoModal::js/cookies.js"/>
+		<script src="AbleCanyon_GeoModal::js/popup-auto.js"/>
+		<css src="AbleCanyon_GeoModal::css/geomodal.css" />
+	</head>
+    <body>
+    	<referenceContainer name="before.body.end">
+			<block class="AbleCanyon\GeoModal\Block\Modal" name="geomodal.modal" template="AbleCanyon_GeoModal::modal.phtml"/>
+		</referenceContainer>
+    </body>
+</page>

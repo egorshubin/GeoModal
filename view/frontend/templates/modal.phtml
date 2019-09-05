@@ -1,0 +1,59 @@
+<div id="geomodal-dialog" class="dialog_window" title="geomodal" style="display: none;">
+
+    <div class="geomodal-dialog-wrap">
+        <div class="pick-store">
+            <?php /* @noEscape */ echo __('Shipping To'); ?>
+        </div>
+        <div class="geomodal-block-content">
+            <a class="geomodal-block" href="<?php /* @noEscape */ echo $block->getUrl('geomodal/index/index', array('selection' => 'us_ca')); ?>" id="selection-us-ca">
+                <span class="geomodal-block__all-wrap"><span class="geomodal-block__images-wrapper"><img
+                                src="<?php /* @noEscape */
+                                echo $block->getViewFileUrl('AbleCanyon_GeoModal::images/us.png'); ?>"
+                                alt="<?php /* @noEscape */
+                                echo __('United States'); ?>"/></span>
+                            <span class="geomodal-block__text"><?php /* @noEscape */
+                                echo __('United States'); ?></span></span>
+            </a>
+
+            <?php if($this->isGermanLink()): ?>
+            <a class="geomodal-block" href="<?php /* @noEscape */  echo $block->getUrl('geomodal/index/index', array('selection' => 'germany')); ?>" id="selection-germany">
+                <span class="geomodal-block__all-wrap"><span class="geomodal-block__images-wrapper"><img
+                                src="<?php /* @noEscape */
+                                echo $block->getViewFileUrl('AbleCanyon_GeoModal::images/au.png'); ?>"
+                                alt="<?php /* @noEscape */
+                                echo __('Austria / Germany'); ?>" class="geomodal-block__left-img"/>
+                                        <img src="<?php /* @noEscape */
+                                        echo $block->getViewFileUrl('AbleCanyon_GeoModal::images/de.png'); ?>"
+                                             alt="<?php /* @noEscape */
+                                             echo __('Austria / Germany'); ?>"/></span>
+                            <span class="geomodal-block__text"><?php /* @noEscape */
+                                echo __('Austria / Germany'); ?></span></span>
+            </a>
+            <?php endif; ?>
+            <a class="geomodal-block israel" href="<?php /* @noEscape */ echo $block->getUrl('geomodal/index/index', array('selection' => 'israel')); ?>" id="selection-israel">
+                <span class="geomodal-block__all-wrap"><span
+                            class="geomodal-block__images-wrapper geomodal-block__images-wrapper"><img
+                                src="<?php /* @noEscape */
+                                echo $block->getViewFileUrl('AbleCanyon_GeoModal::images/il.png'); ?>"
+                                alt="<?php /* @noEscape */
+                                echo __('Israel'); ?>"/></span>
+                            <span class="geomodal-block__text"><?php /* @noEscape */
+                                echo __('Israel'); ?></span></span>
+            </a>
+
+            <a class="geomodal-block global" href="<?php /* @noEscape */ echo $block->getUrl('geomodal/index/index', array('selection' => 'global')); ?>" id="selection-international">
+                <span class="geomodal-block__all-wrap"><span
+                            class="geomodal-block__images-wrapper geomodal-block__images-wrapper_gl"><img
+                                src="<?php /* @noEscape */
+                                echo $block->getViewFileUrl('AbleCanyon_GeoModal::images/gl.png'); ?>"
+                                alt="<?php /* @noEscape */
+                                echo __('Global'); ?>"/></span>
+                            <span class="geomodal-block__text"><?php /* @noEscape */
+                                echo __('Worldwide'); ?></span></span>
+            </a>
+        </div>
+
+    </div>
+
+    
+</div>

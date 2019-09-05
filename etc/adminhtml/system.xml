@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="web" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+            <tab>general</tab>
+            <group id="seo" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="enable_auto_popup" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="27" translate="label" type="select">
+                    <label>Enable GeoIp Auto Popup</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="autoredirect_to_locale_url_de"  showInDefault="1" showInWebsite="1"   sortOrder="28" translate="label" type="text">
+                    <label>German URL</label>
+                </field>
+                <field id="code_de"  showInDefault="1" showInWebsite="1"  sortOrder="29" translate="label comment" type="text">
+                    <label>German Website Code</label>
+                    <comment>Obligatory! Take from Stores->All Stores->Some Website->Code</comment>
+                </field>
+                <field id="autoredirect_to_locale_url_global"  showInDefault="1" showInWebsite="1"  sortOrder="30" translate="label" type="text">
+                    <label>Global URL</label>
+                </field>
+                <field id="code_global" showInDefault="1" sortOrder="31" translate="label comment" type="text">
+                    <label>Global Website Code</label>
+                    <comment>Obligatory! Take from Stores->All Stores->Some Website->Code</comment>
+                </field>
+                <field id="autoredirect_to_locale_url_il"  showInDefault="1" showInWebsite="1"  sortOrder="35" translate="label" type="text">
+                    <label>Israel URL</label>
+                </field>
+                <field id="code_il"  showInDefault="1" showInWebsite="1"  sortOrder="40" translate="label comment" type="text">
+                    <label>Israel Website Code</label>
+                    <comment>Obligatory! Take from Stores->All Stores->Some Website->Code</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

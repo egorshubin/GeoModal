@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Magento/Store/etc/config.xsd">
+    <default>
+        <web>
+            <seo>
+                <enable_auto_popup>1</enable_auto_popup>
+                <code_de></code_de>
+                <code_global></code_global>
+            </seo>
+        </web>
+    </default>
+</config>
